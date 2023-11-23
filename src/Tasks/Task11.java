@@ -11,5 +11,5 @@ public class Task11 {
         int remainingSecondsOfMinutes = remainingSecondsOfHours - theWholeMinutes * 60;
         System.out.println(theWholeDays + " days, " + theWholeHours + " hours, " + theWholeMinutes + " minutes, " + remainingSecondsOfMinutes + " seconds.");
     }
-} 
+}
 
