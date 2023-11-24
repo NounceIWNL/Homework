@@ -1,4 +1,4 @@
-package Tasks
+package Tasks;
 
 public class Task3_33 {
     public static void main(String[] args) {
@@ -19,6 +19,6 @@ public class Task3_33 {
         System.out.println(g);
         boolean h = ((y >= -2) && ((x >= 1) && (x <= 2.5))) || (y >= 1.5);
         System.out.println(h);
-        
+
     }
 }

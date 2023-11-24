@@ -4,15 +4,16 @@ public class Task12 {
     public static void main(String[] args) {
         double amountOfChildren = 250;
 
-        double firstAmountOfChildren = 1 * amountOfChildren;
-        double secondAmountOfChildren = 0.6 * amountOfChildren;
-        double thirdAmountOfChildren = 0.01 * amountOfChildren;
+        double hundredPercentOfChildrenWithLowWeight = 1 * amountOfChildren;
+        double sixtyPercentOfChildrenWithLowWeight = 0.6 * amountOfChildren;
+        double onePercentOfChildrenWithLowWeight = 0.01 * amountOfChildren;
 
         double glassCapacity = 0.2;
         double packageCapacity = 0.9;
         double milkPackages;
         double pancakesAmount;
         double pancakes = 1;
+        double extraPancakes = pancakes++;
 
         /*  1st condition 100% : 100 children = 200 pancakes + 20 milks packages
             2nd condition 60%  : 60 children = 120 pancakes + 12 milks packages
