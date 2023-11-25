@@ -1,4 +1,4 @@
-package Tasks;
+package Tasks30_11_2023;
 import java.util.Scanner;
 
 public class Task09 {

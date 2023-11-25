@@ -1,4 +1,4 @@
-package Tasks;
+package Tasks08_12_2023;
 
 public class Task3_32 {
     public static void main(String[] args) {
