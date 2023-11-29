@@ -20,6 +20,5 @@ public class Task02 {
         } else {
             System.out.println("Wrong number. Please try again.");
         }
-
     }
 }
