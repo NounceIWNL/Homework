@@ -1,6 +1,6 @@
 package Tasks15_12_2023;
 
-public class Task09 {
+public class Task10 {
     public static void main(String[] args) {
         double floors = 9;
         double apartmentsAmountOnOneFloor = 4;
