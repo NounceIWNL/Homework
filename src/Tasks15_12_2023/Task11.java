@@ -17,7 +17,7 @@ public class Task11 {
         double c = scannerC.nextDouble();
         System.out.println();
 
-        double d = (b * b) - 4 * a * c; // d - discriminant 
+        double d = (b * b) - 4 * a * c; // d - discriminant
 
         double x1 = (- b + Math.sqrt(d)) / (2 * a);
         double x2 = (- b - Math.sqrt(d)) / (2 * a);
