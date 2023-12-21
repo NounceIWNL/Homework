@@ -19,9 +19,9 @@ public class Task5_57 {
 
             firstStudentGradesSummary += firstStudentCurrent;
             secondStudentGradesSummary += secondStudentCurrent;
-            System.out.print(firstStudentCurrent + " ");
+            System.out.println(firstStudentCurrent + " ");
             System.out.println();
-            System.out.print(secondStudentCurrent + " ");
+            System.out.println(secondStudentCurrent + " ");
 
         }
         System.out.println(firstStudentGradesSummary);
