@@ -11,23 +11,25 @@ public class Task5_57 {
         int firstStudentCurrent;
         int secondStudentGradesSummary = 0;
         int secondStudentCurrent;
-        int nForRandom= 10;
+        int nForRandom = 10;
 
-        for (int i = 0; i < 4 ; i++) {
+        for (int i = 0; i < 4; i++) {
             firstStudentCurrent = randomOne.nextInt(nForRandom);
             secondStudentCurrent = randomTwo.nextInt(nForRandom);
 
             firstStudentGradesSummary += firstStudentCurrent;
             secondStudentGradesSummary += secondStudentCurrent;
-            System.out.println(firstStudentCurrent + " ");
-            System.out.println();
+            System.out.print(firstStudentCurrent + " ");
             System.out.println(secondStudentCurrent + " ");
+            System.out.println();
 
         }
-        System.out.println(firstStudentGradesSummary);
-        System.out.println(secondStudentGradesSummary);
+        System.out.print(firstStudentGradesSummary + " ");
+        System.out.print(secondStudentGradesSummary);
     }
+
 }
+
 
 
 
