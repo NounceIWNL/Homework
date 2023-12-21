@@ -7,18 +7,18 @@ public class Task5_40 {
         Random random = new Random();
 
         double summary = 0;
-        double x;
+        double current;
         int n = 10;
-        double y;
+
 
 
         for (int i = 0; i < 10 ; i++) {
-            y = random.nextDouble(n);
-            x = y;
-            summary += x;
-            System.out.println(summary);
-            System.out.println(y);
+            current = random.nextDouble(n);
+
+            summary += current;
+            System.out.printf("%.3f", current);
+            System.out.println();
         }
-        System.out.println(summary);
+        System.out.printf("%.3f", summary);
     }
 }
