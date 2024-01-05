@@ -13,7 +13,6 @@ public class Lab2_7 {
         int i = 1; //степень
 
         while (Math.abs(a) > eps) {
-//        for (int i = 1; i < 20; i++) {
             a *= -x * (2 * i + 1) / (2 * i);
             sum += a;
             i++;
