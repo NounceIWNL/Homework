@@ -4,9 +4,9 @@ public class Lab2_7 {
     public static void main(String[] args) {
         double x = 0.5; //заданный Х
 
-        double sum = 1; //финальная сумма всего ряда
-
         double a = 1; //последующее значение после начального
+
+        double sum = 1; //финальная сумма всего ряда
 
         double eps = 1e-5; //граница расчетов
 
