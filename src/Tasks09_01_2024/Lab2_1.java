@@ -1,6 +1,6 @@
 package Tasks09_01_2024;
 
-public class Practice {
+public class Lab2_1 {
     public static void main(String[] args) {
         double x = 0.5; //заданный Х
 
