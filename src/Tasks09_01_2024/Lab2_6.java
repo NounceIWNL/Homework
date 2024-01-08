@@ -1,9 +1,9 @@
 package Tasks09_01_2024;
 
-public class Lab2_4 {
+public class Lab2_6 {
     static int calculateFactorial(int n) {
-        int result = 120;
-        for (int i = 6; i < n; i++) {
+        int result = 6;
+        for (int i = 4; i < n; i++) {
             result *= i;
         }
         return result;
@@ -13,7 +13,7 @@ public class Lab2_4 {
 
         double x = 0.5; //заданный Х
 
-        double a = 0.03125; //последующее значение после начального
+        double a = 4; //последующее значение после начального
 
         double sum = a; //финальная сумма всего ряда
 
@@ -22,13 +22,14 @@ public class Lab2_4 {
         int i = 2; //степень
 
         while (Math.abs(a) > eps) {
-            a *= -x * (2 * i + 1) / calculateFactorial(2 * i + 2);
+            a *= -x / calculateFactorial(2 * i + 2);
             sum += a;
             i *= 2;
             System.out.println(calculateFactorial(2 * i + 2));
             System.out.println(sum);
         }
         System.out.println(sum);
-        System.out.println(0.5 + ((1 - (Math.cos(x)) - (x * Math.sin(x)))/(x * x)));
+        System.out.println((Math.cos(x) / (x * x)) + 0.5);
+
     }
 }
