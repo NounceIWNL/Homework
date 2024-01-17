@@ -4,39 +4,61 @@ package Tasks22_01_2024;
 
 public class HumanBeing {
     public static void main(String[] args) {
+
         Person person1 = new Person();
         person1.setNameAndAge("Mike", 56);
-        person1.introduction();
-        person1.calculateToRetirement();
-//        int yearsToRetirementOne = person1.calculateToRetirement();
-//        System.out.println("Years to retirement left: " + yearsToRetirementOne);
-
+//        person1.introduction();
+        System.out.println("Hello! My name is " + person1.getName() + ", I'm " + person1.getAge() + " years old.");
 
         Person person2 = new Person();
         person2.setNameAndAge("Walter", 51);
-        person2.introduction();
-//        int yearsToRetirementTwo = person2.calculateToRetirement();
-//        System.out.println("Years to retirement left: " + yearsToRetirementTwo);
+//        person2.introduction();
+        System.out.println("Hello! My name is " + person2.getName() + ", I'm " + person2.getAge() + " years old.");
+
 
     }
 
     static class Person {
-        String name;
-        int age;
+        private String name;
+        private int age;
 
-        public void setNameAndAge(String username, int userage){
-            name = username;
-            age = userage;
+        public void setNameAndAge(String username, int userage) {
+            if (username.isEmpty()) {
+                System.out.println("Wrong input.");
+            } else {
+                name = username;
+            }
+            if (userage < 1) {
+                System.out.println("Wrong input.");
+            } else {
+                age = userage;
+            }
         }
 
-        public int calculateToRetirement(){
-         int years = 65 - age;
-         return years;
+        public String getName() {
+            return name;
         }
 
-        public void introduction(){
-            System.out.println("Hello! My name is " + name + ", I'm " + age + " years old.");
+        public int getAge() {
+            return age;
         }
+
+//        public void introduction() {
+//            System.out.println("Hello! My name is " + name + ", I'm " + age + " years old.");
+//        }
+
+        class Human{
+            String name;
+            int age;
+
+            private void setName(String myName){
+                name = myName;
+            }
+            private void setAge(int myAge){
+                age = myAge;
+            }
+        }
+
     }
 }
 
