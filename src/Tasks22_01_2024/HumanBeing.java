@@ -22,16 +22,16 @@ public class HumanBeing {
         private String name;
         private int age;
 
-        public void setNameAndAge(String username, int userage) {
-            if (username.isEmpty()) {
+        public void setNameAndAge(String name, int age) {
+            if (name.isEmpty()) {
                 System.out.println("Wrong input.");
             } else {
-                name = username;
+                this.name = name;
             }
-            if (userage < 1) {
+            if (age < 1) {
                 System.out.println("Wrong input.");
             } else {
-                age = userage;
+                this.age = age;
             }
         }
 
