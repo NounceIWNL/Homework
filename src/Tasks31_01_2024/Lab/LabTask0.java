@@ -1,6 +1,6 @@
 package Tasks31_01_2024.Lab;
 
-public class Lab2 {
+public class LabTask0 {
     public static void main(String[] args) {
         int size = 5;
         int rows = size * 2; // строки
@@ -13,12 +13,6 @@ public class Lab2 {
                 arr[i][j] = 5 + j - i;
                 System.out.print(arr[i][j] + " ");
 
-            }
-        }
-        for (int i = rows - 3; i = size; i--) {
-            for (int j = 0; j < Math.abs(size - i); j++) {
-                arr[i][j] = 5 - j;
-                System.out.print(arr[i][j] + " ");
             }
         }
         System.out.println();
