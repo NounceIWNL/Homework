@@ -1,6 +1,6 @@
 package Tasks31_01_2024.Lab;
 
-public class LabTask0 {
+public class LabTask_00 {
     public static void main(String[] args) {
         int size = 5;
         int rows = size * 2; // строки
