@@ -9,8 +9,8 @@ public class LabTask_01 {
         int[][] arr = new int[rows][cols];
 
         for (int i = 0; i < size; i++) {
-            for (int j = 2; j >= size - i; j--) {
-                arr[i][j] = 6 + j - i;
+            for (int j = 0; j < size - i; j++) {
+                arr[i][j] = 5 - i;
                 System.out.print(arr[i][j] + " ");
             }
         }
