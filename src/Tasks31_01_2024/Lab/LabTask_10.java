@@ -9,8 +9,14 @@ public class LabTask_10 {
         int[][] arr = new int[rows][cols];
 
         for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size - i; j++) {
-                arr[i][j] = 5 - j;
+            for (int j = size - 1; j >= size - i - 1; j--) {
+                arr[i][j] = Math.abs(j + 1);
+                System.out.print(arr[i][j] + " ");
+            }
+        }
+        for (int i = size; i < rows; i++) {
+            for (int j = size - 1; j > Math.abs(size - i); j--) {
+                arr[i][j] = Math.abs(j + 1);
                 System.out.print(arr[i][j] + " ");
             }
         }
