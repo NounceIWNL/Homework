@@ -39,6 +39,7 @@ public class Student {
             }
         }
     }
+
     public static void checkGrade(Integer check, Student[] arrayToCheck) {
         for (int i = 0; i < arrayToCheck.length; i++) {
             if (arrayToCheck[i].getGrade() == check) {
@@ -69,6 +70,13 @@ public class Student {
         System.out.println();
         for (Integer grade : checkAllPossibleGrades) {
             checkGrade(grade, arrayToCheck);
+        }
+    }
+
+    public static void checkTheBirthDate(Date checkDate, Student[] arrayToCheck) {
+        for (int i = 0; i < arrayToCheck.length; i++) {
+            if (checkDate.before(arrayToCheck[i].getBirthDate()))
+                arrayToCheck[i].printFullName();
         }
     }
 
