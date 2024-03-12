@@ -25,6 +25,11 @@ public class Test {
         String check2 = "Faculty 2";
         String check3 = "Faculty 3";
 
+        String check4 = "Group 1";
+        String check5 = "Group 2";
+        String check6 = "Group 3";
+
+
         Date checkDate = new Date("2021/01/01");
 
 
@@ -34,6 +39,12 @@ public class Test {
 
 //        Student.pickTheFacultyAndGradeInfo(arrayOfObjects);
 
-        Student.checkTheBirthDate(checkDate, arrayOfObjects);
+//        Student.checkTheBirthDate(checkDate, arrayOfObjects);
+
+        Student.checkGroup(check4, arrayOfObjects);
+        Student.checkGroup(check5, arrayOfObjects);
+        Student.checkGroup(check6, arrayOfObjects);
+
+
     }
 }

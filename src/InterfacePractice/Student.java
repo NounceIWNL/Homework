@@ -48,6 +48,14 @@ public class Student {
         }
     }
 
+    public static void checkGroup(String check, Student[] arrayToCheck) {
+        for (int i = 0; i < arrayToCheck.length; i++) {
+            if (arrayToCheck[i].getGroup().equals(check)) {
+                arrayToCheck[i].printFullName();
+            }
+        }
+    }
+
     public void printFullName() {
         System.out.println(name + " "
                 + patronymic + " "
