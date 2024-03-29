@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class CollectionsPractice {
+public class CollectionsPractice1 {
     public static void main(String[] args) {
         SortedMap<String, Integer> book1 = new TreeMap<>();
         book1.put("Year", 1990);
