@@ -11,38 +11,20 @@ public class CollectionsPractice2 {
         phoneBook.put("Red", 1344);
         phoneBook.put("Orange", 3324);
 
-//        System.out.println(phoneBook);
+        System.out.println(phoneBook.values());
+        System.out.println(phoneBook.keySet());
 
-        List<SortedMap<String, Integer>> phoneBookToSort = new ArrayList<>();
-
-        phoneBookToSort.add(phoneBook);
-
-
-//        System.out.println(phoneBookToSort);
-
-//        String compareChar = "1";
-
-        Collection<Integer> values = phoneBook.values();
-        System.out.println(values);
-
-
-        for (int i = 0; i < values.size(); i++) {
-//            if () {
-//                System.out.println(i);
+//        for (int i = 0; i < phoneBook.values().size(); i++) {
+//            if ((int) phoneBook.values().toArray()[i] / 1000 == 1) {
+//                System.out.println(phoneBook.keySet().toArray()[i] + " " + phoneBook.values().toArray()[i]);
 //            }
-        }
-    }
-    static class BookComparator implements Comparator<SortedMap<String, Integer>> {
+//        }
 
-        public int compare(SortedMap<String, Integer> a, SortedMap<String, Integer> b) {
-            if (a.containsValue(String.valueOf(1))) {
-                return 1;
-            } else if (a.get("Year") < b.get("Year")) {
-                return -1;
-            } else if (a.get("Year").equals(b.get("Year"))) {
-                return 0;
+        for (int i = 0; i < phoneBook.values().size(); i++) {
+            char check = '1';
+            if (phoneBook.values().toArray()[i].toString().charAt(0) == check) {
+                System.out.println(phoneBook.keySet().toArray()[i] + " " + phoneBook.values().toArray()[i]);
             }
-            return 0;
         }
     }
 }
