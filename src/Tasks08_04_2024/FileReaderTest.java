@@ -1,4 +1,4 @@
-package Tasks8_04_2024;
+package Tasks08_04_2024;
 
 import java.io.*;
 import java.util.*;
@@ -53,7 +53,7 @@ public class FileReaderTest extends InitialProductList {
             }
         }
 
-        Details finalList = new DiscountList(new SurchargeList(new InitialProductList()));
+//        Details finalList = new DiscountList(new SurchargeList(new InitialProductList()));
 
 
     }

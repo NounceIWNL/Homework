@@ -1,4 +1,4 @@
-package Tasks8_04_2024;
+package Tasks08_04_2024;
 
 public class DiscountList extends InitialProductList {
     public DiscountList(String name, double price) {
