@@ -18,7 +18,7 @@ interface Sorcerer {
 
     void usePrePot();
 }
-
+ 
 class Warlock implements Sorcerer {
     public void burst() {
         usePrePot();

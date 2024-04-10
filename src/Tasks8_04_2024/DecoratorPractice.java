@@ -16,7 +16,6 @@ public class DecoratorPractice {
 }
 
 interface Details{
-    public String name();
     public double purchasePrice();
 }
 
