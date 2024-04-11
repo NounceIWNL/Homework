@@ -16,6 +16,8 @@ public class Main {
     public static List<Product> productList;
     public static List<Surcharge> surchargeList;
     public static List<Discount> discountList;
+    public static List<Product> updatedListWithSurcharge;
+    public static List<Product> updatedListWithDiscount;
 
     public static void main(String[] args) throws IOException {
 
@@ -35,11 +37,12 @@ public class Main {
         surchargeList = getSurchargedList(surchargeListToRead);
         discountList = getDiscountList(discountListToRead);
 
-//        System.out.println(productList);
-//        System.out.println(surchargeList);
-//        System.out.println(discountList);
 
-        System.out.println(getProductListWithSurcharge(productList, surchargeList));
+        getProductListWithSurcharge(productList, surchargeList);
+        System.out.println(updatedListWithSurcharge);
+
+        getProductListWithDiscount(updatedListWithSurcharge, discountList);
+        System.out.println(updatedListWithDiscount);
 
     }
 
@@ -164,15 +167,27 @@ public class Main {
     }
 
     public static List<Product> getProductListWithSurcharge(List<Product> product, List<Surcharge> surcharge) {
+        updatedListWithSurcharge = new ArrayList<>();
         for (int i = 0; i < product.size(); i++) {
             for (int j = 0; j < surcharge.size(); j++) {
                 if (product.get(i).category.equals(surcharge.get(j).category) && product.get(i).name.equals(surcharge.get(j).name)) {
-                    product.get(i).price = surcharge.get(j).getPrice((Product) product);
-                    System.out.println(product.get(i));
+                    updatedListWithSurcharge.add(new Product(surcharge.get(j).category, surcharge.get(j).name, surcharge.get(j).getPrice(product.get(i))));
                 }
             }
         }
-        return product;
+        return updatedListWithSurcharge;
+    }
+
+    public static List<Product> getProductListWithDiscount(List<Product> product, List<Discount> discount) {
+        updatedListWithDiscount = new ArrayList<>();
+        for (int i = 0; i < product.size(); i++) {
+            for (int j = 0; j < discount.size(); j++) {
+                if (product.get(i).category.equals(discount.get(j).category) && product.get(i).name.equals(discount.get(j).name)) {
+                    updatedListWithDiscount.add(new Product(product.get(i).category, discount.get(j).name, discount.get(j).getPrice(product.get(i))));
+                }
+            }
+        }
+        return updatedListWithDiscount;
     }
 }
 
