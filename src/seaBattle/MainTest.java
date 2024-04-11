@@ -58,9 +58,10 @@ public class MainTest {
                 if (table[cols][rows] == 1) {
                     System.out.println("Ship has dodged the attack!");
                     cols = i + 1;
-                    if (table[cols][rows] == 1)
+                    if (table[cols][rows] == 1) {
                         table[i][j]++;
-                    count++;
+                        count++;
+                    }
                 }
                 if (table[cols][rows] == 2) {
                     System.out.println("Ship has been destroyed!");
