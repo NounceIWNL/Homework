@@ -30,21 +30,27 @@ Requirements:
 
 public class DataTypes03 {
     public static int convertToInteger(String input) {
-        //write your code here
-
+        try {
+            int value = Integer.parseInt(input);
+            return value;
+        } catch (NumberFormatException e) {
+            System.out.println("String cannot be converted to an integer");
+        }
         return 0;
     }
 
     public static float convertToFloat(String input) {
-        //write your code here
-
+        try {
+            float value = Float.parseFloat(input);
+            return value;
+        } catch (NumberFormatException e) {
+            System.out.println("String cannot be converted to a float");
+        }
         return 0.0f;
     }
 
     public static boolean convertToBoolean(String input) {
-        //write your code here
-
-        return false;
+        return Boolean.parseBoolean(input);
     }
 
     public static void main(String[] args) {
