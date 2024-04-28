@@ -15,12 +15,12 @@ public class Strings01 {
         String emptyString = "";
 
         //write your code here
-        System.out.println(emptyString);
-        System.out.println("Gomu Gomu no Bazooka!");
-        System.out.println((emptyString + 2 + 2 + "22"));
-        System.out.println("of Edo's rain");
-        System.out.println("how many mouthfuls did you drink,");
-        System.out.println("cuckoo?");
+        System.out.println(emptyString.length());
+        System.out.println("Gomu Gomu no Bazooka!".length());
+        System.out.println((emptyString + 2 + 2 + "22").length());
+        System.out.println("of Edo's rain".length());
+        System.out.println("how many mouthfuls did you drink,".length());
+        System.out.println("cuckoo?".length());
     }
 }
 

@@ -18,7 +18,15 @@ public class Objects02 {
         public int y;
         public int z;
         public double r;
+
+        public Sphere(int x, int y, int z, double r) {
+            this.x = x;
+            this.y = y;
+            this.z = z;
+            this.r = r;
+        }
     }
+
     public static void main(String[] args) {
 
     }

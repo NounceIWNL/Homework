@@ -25,12 +25,34 @@ public class Objects03 {
         System.out.println(rabbit1);
         System.out.println(rabbit2);
 
+        Horse horse1 = new Horse();
+        Horse horse2 = new Horse();
+        System.out.println(horse1);
+        System.out.println(horse2);
+
+        Hamster hamster1 = new Hamster();
+        Hamster hamster2 = new Hamster();
+        System.out.println(hamster1);
+        System.out.println(hamster2);
+
         //write your code here
     }
 
     public static class Rabbit {
         public String toString() {
             return "Rabbit";
+        }
+    }
+
+    public static class Horse extends Rabbit {
+        public String toString() {
+            return "Horse";
+        }
+    }
+
+    public static class Hamster extends Rabbit {
+        public String toString() {
+            return "Hamster";
         }
     }
 
