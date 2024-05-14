@@ -21,6 +21,7 @@ public class Task01 {
         thread1.start();
 
         thread2.start();
+
     }
 
     static class Guard implements Runnable {
